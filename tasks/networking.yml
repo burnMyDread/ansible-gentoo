@@ -1,18 +1,17 @@
-- name: Management Interface Configuration
-  command: chroot /mnt/gentoo bash -c "cd /etc/init.d; ln -s net.lo net.{{ management_interface }}" creates=/mnt/gentoo/etc/init.d/net.{{ management_interface }}
-  
-- name: Configure Default Interface
-  template: src=net dest=/mnt/gentoo/etc/conf.d/net
+- name: Create networkingd file
+  copy:
+    src: 50-dhcp.network
+    dest: /mnt/gentoo/etc/systemd/network/50-dhcp.network
+    
 
-- name: Add Interface Default Run Configuration. 
-  command: chroot /mnt/gentoo bash -c 'rc-update add net.{{ management_interface }} default'
+- name: enable network service
+  command: chroot /mnt/gentoo bash -c 'source /etc/profile; systemctl enable systemd-networkd.service'
 
-- name: Add SSHD to Default Run Configuration.
-  command: chroot /mnt/gentoo bash -c 'rc-update add sshd default'
-
+- name: enable network service
+  command: chroot /mnt/gentoo bash -c 'source /etc/profile; systemctl enable systemd-networkd.service'
 
 - name: Create root .ssh Directory
-  command: mkdir -p /mnt/gentoo/root/.ssh && chmod 700 /mnt/gentoo/root/.ssh && chmod 700 /mnt/gentoo/root/.ssh
+  command: mkdir -p /mnt/gentoo/root/.ssh && chmod 700 /mnt/gentoo/root/.ssh && chmod 600 /mnt/gentoo/root/.ssh
 
 - name: Configure Root Authorized Key
   authorized_key: user=root

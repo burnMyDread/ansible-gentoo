@@ -1,20 +1,23 @@
 ---
 # defaults file for ansible-gentoo
 pubkey: ~/.ssh/id_rsa.pub
-main_disk: /dev/sda
+main_disk: /dev/vda
 root_size: 95%FREE
 swap_size: 2048m
 vg_name:   main
 fstype: ext4
 force_format: no
-mirror: http://mirror.mcs.anl.gov/pub/gentoo 
+mirror: http://www.gtlib.gatech.edu/pub/gentoo
+type: desktop-systemd
 timezone: America/New_York
 domain: met.tfoundry.com
 kernel: config-3.13.0-24-generic
-make_opts: -j4
+make_opts: -j9
 management_interface: "{{ ansible_default_ipv4.interface }}"
-root_passwd: gentoo-root
+root_passwd: empty&Greassy7times
 gateway: "{{ ansible_default_ipv4.gateway }}"
 netmask: "{{ ansible_default_ipv4.netmask }}"
-eselect_profile: "18"
-USE: "-bluetooth caps cdr crypt -ipod ipv6 -jit ldap multilib pie -wifi"
+eselect_profile: "17"
+CFLAGS: "-O2 -pipe -fstack-protector-all -D_FORTIFY_SOURCE=2 -fPIC"
+LDFLAGS: "-Wl,-z,now -Wl,-z,relro"
+USE: "-bluetooth caps cdr crypt -ipod ipv6 -jit multilib pie -wifi symlink"

@@ -1,0 +1,1 @@
+http://www.gtlib.gatech.edu/pub/gentoo/releases/amd64/autobuilds/

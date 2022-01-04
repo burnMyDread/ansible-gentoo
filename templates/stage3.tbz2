@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /pub/gentoo/releases/amd64/autobuilds</title>
+ </head>
+ <body>
+<h1>Index of /pub/gentoo/releases/amd64/autobuilds</h1>
+<pre><img src="/icons/blank.gif" alt="Icon "> <a href="?C=N;O=D">Name</a>                                                       <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="/icons/back.gif" alt="[PARENTDIR]"> <a href="/pub/gentoo/releases/amd64/">Parent Directory</a>                                                                -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="20211107T170547Z/">20211107T170547Z/</a>                                          2021-11-07 17:21    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="20211114T170549Z/">20211114T170549Z/</a>                                          2021-11-14 18:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="20211121T170545Z/">20211121T170545Z/</a>                                          2021-11-21 18:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="20211128T170532Z/">20211128T170532Z/</a>                                          2021-11-28 22:21    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="20211205T170532Z/">20211205T170532Z/</a>                                          2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-admincd-amd64/">current-admincd-amd64/</a>                                     2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-install-amd64-minimal/">current-install-amd64-minimal/</a>                             2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-desktop-openrc/">current-stage3-amd64-desktop-openrc/</a>                       2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-desktop-systemd/">current-stage3-amd64-desktop-systemd/</a>                      2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-hardened-nomultilib-openrc/">current-stage3-amd64-hardened-nomultilib-openrc/</a>           2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-hardened-nomultilib-selinux-openrc/">current-stage3-amd64-hardened-nomultilib-selinux-openrc/</a>   2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-hardened-openrc/">current-stage3-amd64-hardened-openrc/</a>                      2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-hardened-selinux-openrc/">current-stage3-amd64-hardened-selinux-openrc/</a>              2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-musl-hardened/">current-stage3-amd64-musl-hardened/</a>                        2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-musl/">current-stage3-amd64-musl/</a>                                 2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-nomultilib-openrc/">current-stage3-amd64-nomultilib-openrc/</a>                    2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-nomultilib-systemd/">current-stage3-amd64-nomultilib-systemd/</a>                   2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-openrc/">current-stage3-amd64-openrc/</a>                               2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-amd64-systemd/">current-stage3-amd64-systemd/</a>                              2021-12-05 23:01    -   
+<img src="/icons/folder.gif" alt="[DIR]"> <a href="current-stage3-x32-openrc/">current-stage3-x32-openrc/</a>                                 2021-12-05 23:01    -   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-admincd-amd64.txt">latest-admincd-amd64.txt</a>                                   2021-12-07 03:00  125   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-install-amd64-minimal.txt">latest-install-amd64-minimal.txt</a>                           2021-12-07 03:00  133   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-iso.txt">latest-iso.txt</a>                                             2021-12-07 03:00  195   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-desktop-openrc.txt">latest-stage3-amd64-desktop-openrc.txt</a>                     2021-12-07 03:00  142   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-desktop-systemd.txt">latest-stage3-amd64-desktop-systemd.txt</a>                    2021-12-07 03:00  143   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-hardened-nomultilib-openrc.txt">latest-stage3-amd64-hardened-nomultilib-openrc.txt</a>         2021-12-07 03:00  154   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-hardened-nomultilib-selinux-openrc.txt">latest-stage3-amd64-hardened-nomultilib-selinux-openrc.txt</a> 2021-12-07 03:00  162   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-hardened-openrc.txt">latest-stage3-amd64-hardened-openrc.txt</a>                    2021-12-07 03:00  143   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-hardened-selinux-openrc.txt">latest-stage3-amd64-hardened-selinux-openrc.txt</a>            2021-12-07 03:00  151   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-musl-hardened.txt">latest-stage3-amd64-musl-hardened.txt</a>                      2021-12-07 03:00  141   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-musl.txt">latest-stage3-amd64-musl.txt</a>                               2021-12-07 03:00  132   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-nomultilib-openrc.txt">latest-stage3-amd64-nomultilib-openrc.txt</a>                  2021-12-07 03:00  145   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-nomultilib-systemd.txt">latest-stage3-amd64-nomultilib-systemd.txt</a>                 2021-12-07 03:00  146   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-openrc.txt">latest-stage3-amd64-openrc.txt</a>                             2021-12-07 03:00  134   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-amd64-systemd.txt">latest-stage3-amd64-systemd.txt</a>                            2021-12-07 03:00  135   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3-x32-openrc.txt">latest-stage3-x32-openrc.txt</a>                               2021-12-07 03:00  132   
+<img src="/icons/text.gif" alt="[TXT]"> <a href="latest-stage3.txt">latest-stage3.txt</a>                                          2021-12-07 03:00  1.1K  
+<hr></pre>
+<address>Apache/2.4.6 (Red Hat Enterprise Linux) Server at www.gtlib.gatech.edu Port 80</address>
+</body></html>

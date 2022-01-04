@@ -2,12 +2,15 @@
   template: src=get_stage.sh dest=/mnt/gentoo/ mode=755
 
 - name: Download Stage3 Tarball
-  command: /mnt/gentoo/get_stage.sh chdir=/mnt/gentoo
+  command: /mnt/gentoo/get_stage.sh
+  args:
+      creates: /mnt/gentoo/etc
+      chdir: /mnt/gentoo/
   tags:
     - filesystem
 
 - name: Unarchive Stage3 Tarball
-  command: tar xjpf stage3.tbz2
+  command: tar xvpf stage3.tar.xz 
   args:
       creates: /mnt/gentoo/etc
       chdir: /mnt/gentoo/
@@ -24,13 +27,35 @@
   tags:
     - filesystem
 
+- name: dev makerslave
+  command: mount --make-rslave /mnt/gentoo/dev
+  tags:
+    - filesystem
+
 - name: sys bind mounts
   command: mount --rbind /sys /mnt/gentoo/sys creates=/mnt/gentoo/sys/dev
   tags:
     - filesystem
 
+- name: sys makerslave
+  command: mount --make-rslave /mnt/gentoo/sys
+  tags:
+    - filesystem
+
+- name: run bind mounts
+  command: mount --bind /run /mnt/gentoo/run
+  args:
+    creates: /mnt/gentoo/run/mount
+  tags:
+    - filesystem
+
+- name: run makerslave
+  command: mount --make-rslave /mnt/gentoo/run
+  tags:
+    - filesystem
+
 - name: Cleanup Stage3 Archive
-  file: path=/mnt/gentoo/stage3.tbz2 state=absent
+  file: path=/mnt/gentoo/stage3.tar.xz state=absent
 
 - name: Cleanup get_stage.sh
   file: path=/mnt/gentoo/get_stage.sh state=absent
@@ -64,6 +89,6 @@
   copy: src=fstab dest=/mnt/gentoo/etc/fstab
 
 - name: Create Make.conf
-  copy: src=make.conf dest=/mnt/gentoo/etc/portage/make.conf
+  template: src=make.conf dest=/mnt/gentoo/etc/portage/make.conf
 
 - command: touch /tmp/filesystem_completed

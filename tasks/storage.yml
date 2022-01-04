@@ -13,17 +13,6 @@
   when: parted_is_done.stat.exists == False
   tags:
     - storage
-
-- name: Create Grub BIOS Partition
-  when: parted_is_done.stat.exists == False
-  parted:
-    device: "{{ main_disk }}"
-    number: 1
-    part_end: 1MiB
-    flags: [ bios_grub ]
-    state: present
-  tags:
-    - storage
   
 - name: Create Boot Partition
   when: parted_is_done.stat.exists == False
@@ -37,7 +26,7 @@
     - storage
 
 - name: Format Boot Partition
-  filesystem: "fstype={{ fstype }} dev={{ main_disk }}2 force={{ force_format }}"
+  filesystem: "fstype={{ fstype }} dev={{ main_disk }}1 force={{ force_format }}"
   tags:
     - storage
 
@@ -47,7 +36,7 @@
     device: "{{ main_disk }}"
     number: 3
     part_start: 150MiB
-    flags: [ LVM ]
+    flags: [ lvm ]
     state: present
   tags:
     - storage
@@ -59,7 +48,7 @@
     - storage
 
 - name: Create Main Volume Group
-  lvg: "pvs={{ main_disk }}3 vg={{ vg_name }}"
+  lvg: "pvs={{ main_disk }}2 vg={{ vg_name }}"
   tags:
     - storage
 
@@ -74,7 +63,7 @@
     - storage
 
 - name: Create root Volume
-  lvol: "lv=root vg={{ vg_name }} size={{ root_size }}"
+  lvol: "lv=root vg={{ vg_name }} size={{ root_size }} shrink=no"
   tags:
     - storage
 
@@ -97,13 +86,14 @@
     fstab: /tmp/tmp_fstab
     fstype: "{{ fstype }}"
     state: mounted
+    opts: rw
   tags:
     - storage
 
 - name: Mount boot
   mount:
     path: /mnt/gentoo/boot
-    src: "{{ main_disk }}2"
+    src: "{{ main_disk }}1"
     fstab: /tmp/tmp_fstab
     fstype: "{{ fstype }}"
     state: mounted
